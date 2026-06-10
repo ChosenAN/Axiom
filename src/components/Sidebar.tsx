@@ -17,7 +17,7 @@ interface ModuleEntry {
 
 const MODULES: ModuleEntry[] = [
   { id: 'grades', label: 'Grade Tracker', icon: GraduationCap, enabled: true },
-  { id: 'tasks', label: 'Task Tracker', icon: ListTodo, enabled: false },
+  { id: 'tasks', label: 'Task Tracker', icon: ListTodo, enabled: true },
   { id: 'opportunities', label: 'Opportunities', icon: Award, enabled: false },
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, enabled: false },
   { id: 'assistant', label: 'AI Assistant', icon: Sparkles, enabled: false },

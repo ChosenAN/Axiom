@@ -8,7 +8,7 @@
 
 \- \[x] Grade Tracker
 
-\- \[ ] Task Tracker
+\- \[x] Task Tracker
 
 \- \[ ] Opportunity Tracker
 
@@ -22,7 +22,7 @@
 
 \## Active Module
 
-Grade Tracker complete. Next up: Task Tracker.
+Task Tracker complete. Next up: Opportunity Tracker.
 
 
 
@@ -41,6 +41,10 @@ Grade Tracker complete. Next up: Task Tracker.
 \- Grade model: Course/Category/Assignment in src/types/grades.ts; what-if scores are ephemeral UI state, never persisted
 
 \- Grade math: pure functions in src/lib/gradeCalc.ts, covered by Vitest (npm test)
+
+\- Task model: Task in src/types/tasks.ts with optional courseId link to Grade Tracker; dueDate is ISO YYYY-MM-DD; persisted to axiom\_v1\_tasks
+
+\- Kanban drag: native HTML5 DnD (no dependency); list view groups by due-date bucket (src/lib/taskDates.ts, tested)
 
 
 

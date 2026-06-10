@@ -1,5 +1,6 @@
 import { Sidebar } from './components/Sidebar'
 import { GradeTracker } from './modules/grades/GradeTracker'
+import { TaskTracker } from './modules/tasks/TaskTracker'
 import { useNavStore } from './stores/navStore'
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <main className="flex-1 overflow-y-auto p-8">
         {active === 'grades' ? (
           <GradeTracker />
+        ) : active === 'tasks' ? (
+          <TaskTracker />
         ) : (
           <p className="text-gray-500">This module is coming soon.</p>
         )}
