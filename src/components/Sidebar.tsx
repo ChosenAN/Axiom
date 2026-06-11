@@ -21,7 +21,7 @@ const MODULES: ModuleEntry[] = [
   { id: 'tasks', label: 'Task Tracker', icon: ListTodo, enabled: true },
   { id: 'opportunities', label: 'Opportunities', icon: Award, enabled: true },
   { id: 'assistant', label: 'AI Assistant', icon: Sparkles, enabled: true },
-  { id: 'search', label: 'UCSD Search', icon: Search, enabled: false },
+  { id: 'search', label: 'UCSD Search', icon: Search, enabled: true },
 ]
 
 export function Sidebar() {

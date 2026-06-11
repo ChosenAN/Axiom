@@ -3,6 +3,7 @@ import { Assistant } from './modules/assistant/Assistant'
 import { Dashboard } from './modules/dashboard/Dashboard'
 import { GradeTracker } from './modules/grades/GradeTracker'
 import { OpportunityTracker } from './modules/opportunities/OpportunityTracker'
+import { UcsdSearch } from './modules/search/UcsdSearch'
 import { TaskTracker } from './modules/tasks/TaskTracker'
 import { useNavStore } from './stores/navStore'
 
@@ -23,6 +24,8 @@ function App() {
           <OpportunityTracker />
         ) : active === 'assistant' ? (
           <Assistant />
+        ) : active === 'search' ? (
+          <UcsdSearch />
         ) : (
           <p className="text-gray-500">This module is coming soon.</p>
         )}
