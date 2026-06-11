@@ -1,4 +1,5 @@
 import { Sidebar } from './components/Sidebar'
+import { Assistant } from './modules/assistant/Assistant'
 import { Dashboard } from './modules/dashboard/Dashboard'
 import { GradeTracker } from './modules/grades/GradeTracker'
 import { OpportunityTracker } from './modules/opportunities/OpportunityTracker'
@@ -20,6 +21,8 @@ function App() {
           <TaskTracker />
         ) : active === 'opportunities' ? (
           <OpportunityTracker />
+        ) : active === 'assistant' ? (
+          <Assistant />
         ) : (
           <p className="text-gray-500">This module is coming soon.</p>
         )}
