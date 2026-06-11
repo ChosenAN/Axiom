@@ -1,4 +1,5 @@
 import { Sidebar } from './components/Sidebar'
+import { Dashboard } from './modules/dashboard/Dashboard'
 import { GradeTracker } from './modules/grades/GradeTracker'
 import { OpportunityTracker } from './modules/opportunities/OpportunityTracker'
 import { TaskTracker } from './modules/tasks/TaskTracker'
@@ -11,7 +12,9 @@ function App() {
     <div className="flex h-screen">
       <Sidebar />
       <main className="flex-1 overflow-y-auto p-8">
-        {active === 'grades' ? (
+        {active === 'dashboard' ? (
+          <Dashboard />
+        ) : active === 'grades' ? (
           <GradeTracker />
         ) : active === 'tasks' ? (
           <TaskTracker />

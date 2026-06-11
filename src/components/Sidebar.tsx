@@ -16,10 +16,10 @@ interface ModuleEntry {
 }
 
 const MODULES: ModuleEntry[] = [
+  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, enabled: true },
   { id: 'grades', label: 'Grade Tracker', icon: GraduationCap, enabled: true },
   { id: 'tasks', label: 'Task Tracker', icon: ListTodo, enabled: true },
   { id: 'opportunities', label: 'Opportunities', icon: Award, enabled: true },
-  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, enabled: false },
   { id: 'assistant', label: 'AI Assistant', icon: Sparkles, enabled: false },
   { id: 'search', label: 'UCSD Search', icon: Search, enabled: false },
 ]

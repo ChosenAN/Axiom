@@ -14,6 +14,6 @@ interface NavState {
 }
 
 export const useNavStore = create<NavState>((set) => ({
-  active: 'grades',
+  active: 'dashboard',
   setActive: (module) => set({ active: module }),
 }))
